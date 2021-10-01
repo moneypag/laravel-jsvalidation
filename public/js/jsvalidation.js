@@ -2459,6 +2459,8 @@ laravelValidation = {
                 beforeSend: function (xhr) {
                     var token = getCsrfToken(params);
                     if (formMethod(validator) !== 'get' && token) {
+                    	xhr.setRequestHeader('API-KEY', window.api_key);
+                    	xhr.setRequestHeader('Authorization', window.Authorization);
                         return xhr.setRequestHeader('X-XSRF-TOKEN', token);
                     }
                 },
