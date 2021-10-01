@@ -1,13 +1,13 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Javascript;
+namespace MoneyPag\JsValidation\Tests\Javascript;
 
 use Illuminate\Support\Facades\View;
 use Mockery as m;
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Exceptions\PropertyNotFoundException;
-use Proengsoft\JsValidation\Javascript\JavascriptValidator;
-use Proengsoft\JsValidation\Javascript\ValidatorHandler;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Exceptions\PropertyNotFoundException;
+use MoneyPag\JsValidation\Javascript\JavascriptValidator;
+use MoneyPag\JsValidation\Javascript\ValidatorHandler;
 
 class JavascriptValidatorTest extends TestCase
 {

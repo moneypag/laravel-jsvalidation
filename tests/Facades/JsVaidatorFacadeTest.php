@@ -1,9 +1,9 @@
 <?php
 
-namespace Proengsoft\JsValidation\Test\Facades;
+namespace MoneyPag\JsValidation\Test\Facades;
 
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Facades\JsValidatorFacade;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Facades\JsValidatorFacade;
 
 class JsValidatorFacadeTest extends TestCase
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Proengsoft\JsValidation;
+namespace MoneyPag\JsValidation;
 
 use Closure;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Http\Request;
-use Proengsoft\JsValidation\Remote\Resolver;
-use Proengsoft\JsValidation\Remote\Validator as RemoteValidator;
+use MoneyPag\JsValidation\Remote\Resolver;
+use MoneyPag\JsValidation\Remote\Validator as RemoteValidator;
 
 class RemoteValidationMiddleware
 {

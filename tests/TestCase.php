@@ -1,8 +1,8 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests;
+namespace MoneyPag\JsValidation\Tests;
 
-use Proengsoft\JsValidation\JsValidationServiceProvider;
+use MoneyPag\JsValidation\JsValidationServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

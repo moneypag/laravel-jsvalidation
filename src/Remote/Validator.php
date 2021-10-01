@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Remote;
+namespace MoneyPag\JsValidation\Remote;
 
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
@@ -8,8 +8,8 @@ use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Validation\ValidationRuleParser;
 use Illuminate\Validation\Validator as BaseValidator;
-use Proengsoft\JsValidation\Support\AccessProtectedTrait;
-use Proengsoft\JsValidation\Support\RuleListTrait;
+use MoneyPag\JsValidation\Support\AccessProtectedTrait;
+use MoneyPag\JsValidation\Support\RuleListTrait;
 
 class Validator
 {

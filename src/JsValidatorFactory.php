@@ -1,18 +1,18 @@
 <?php
 
-namespace Proengsoft\JsValidation;
+namespace MoneyPag\JsValidation;
 
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Foundation\Http\FormRequest as IlluminateFormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Validator;
-use Proengsoft\JsValidation\Javascript\JavascriptValidator;
-use Proengsoft\JsValidation\Javascript\MessageParser;
-use Proengsoft\JsValidation\Javascript\RuleParser;
-use Proengsoft\JsValidation\Javascript\ValidatorHandler;
-use Proengsoft\JsValidation\Remote\FormRequest;
-use Proengsoft\JsValidation\Support\DelegatedValidator;
-use Proengsoft\JsValidation\Support\ValidationRuleParserProxy;
+use MoneyPag\JsValidation\Javascript\JavascriptValidator;
+use MoneyPag\JsValidation\Javascript\MessageParser;
+use MoneyPag\JsValidation\Javascript\RuleParser;
+use MoneyPag\JsValidation\Javascript\ValidatorHandler;
+use MoneyPag\JsValidation\Remote\FormRequest;
+use MoneyPag\JsValidation\Support\DelegatedValidator;
+use MoneyPag\JsValidation\Support\ValidationRuleParserProxy;
 
 class JsValidatorFactory
 {
@@ -64,7 +64,7 @@ class JsValidatorFactory
      * @param  array  $messages
      * @param  array  $customAttributes
      * @param  null|string  $selector
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function make(array $rules, array $messages = [], array $customAttributes = [], $selector = null)
     {
@@ -123,7 +123,7 @@ class JsValidatorFactory
      *
      * @param $formRequest
      * @param  null|string  $selector
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      *
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
@@ -237,7 +237,7 @@ class JsValidatorFactory
      *
      * @param  \Illuminate\Validation\Validator  $validator
      * @param  null|string  $selector
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function validator(Validator $validator, $selector = null)
     {
@@ -249,7 +249,7 @@ class JsValidatorFactory
      *
      * @param  \Illuminate\Validation\Validator  $validator
      * @param  null|string  $selector
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     protected function jsValidator(Validator $validator, $selector = null)
     {

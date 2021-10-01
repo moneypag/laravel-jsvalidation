@@ -1,9 +1,9 @@
 <?php
 
-namespace Proengsoft\JsValidation\Javascript;
+namespace MoneyPag\JsValidation\Javascript;
 
-use Proengsoft\JsValidation\Support\DelegatedValidator;
-use Proengsoft\JsValidation\Support\UseDelegatedValidatorTrait;
+use MoneyPag\JsValidation\Support\DelegatedValidator;
+use MoneyPag\JsValidation\Support\UseDelegatedValidatorTrait;
 
 class ValidatorHandler
 {
@@ -46,7 +46,7 @@ class ValidatorHandler
     /**
      * Sets delegated Validator instance.
      *
-     * @param  \Proengsoft\JsValidation\Support\DelegatedValidator  $validator
+     * @param  \MoneyPag\JsValidation\Support\DelegatedValidator  $validator
      * @return void
      */
     public function setDelegatedValidator(DelegatedValidator $validator)

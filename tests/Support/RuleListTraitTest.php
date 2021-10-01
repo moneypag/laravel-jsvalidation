@@ -1,8 +1,8 @@
 <?php
 
-namespace Proengsoft\JsValidation\Support;
+namespace MoneyPag\JsValidation\Support;
 
-use Proengsoft\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Tests\TestCase;
 
 class RuleListTraitTest extends TestCase
 {
@@ -17,7 +17,7 @@ class RuleListTraitTest extends TestCase
     {
         parent::setUp();
 
-        $this->mockTrait = $this->getMockForTrait(\Proengsoft\JsValidation\Support\RuleListTrait::class);
+        $this->mockTrait = $this->getMockForTrait(\MoneyPag\JsValidation\Support\RuleListTrait::class);
     }
 
     public function testIsImplemented() {

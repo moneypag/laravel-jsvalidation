@@ -1,10 +1,10 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Remote;
+namespace MoneyPag\JsValidation\Tests\Remote;
 
 use Illuminate\Http\Exceptions\HttpResponseException;
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Remote\Resolver;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Remote\Resolver;
 
 require_once __DIR__.'/../stubs/ResolverTest.php';
 

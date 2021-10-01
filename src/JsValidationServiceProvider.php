@@ -1,10 +1,10 @@
 <?php
 
-namespace Proengsoft\JsValidation;
+namespace MoneyPag\JsValidation;
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
-use Proengsoft\JsValidation\Javascript\ValidatorHandler;
+use MoneyPag\JsValidation\Javascript\ValidatorHandler;
 
 class JsValidationServiceProvider extends ServiceProvider
 {

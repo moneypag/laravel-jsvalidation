@@ -1,8 +1,8 @@
 <?php
 
-namespace Proengsoft\JsValidation\Support;
+namespace MoneyPag\JsValidation\Support;
 
-use Proengsoft\JsValidation\Javascript\RuleParser;
+use MoneyPag\JsValidation\Javascript\RuleParser;
 
 trait RuleListTrait
 {

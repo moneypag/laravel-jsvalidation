@@ -1,15 +1,15 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Remote;
+namespace MoneyPag\JsValidation\Tests\Remote;
 
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Validation\Validator as LaravelValidator;
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Javascript\ValidatorHandler;
-use Proengsoft\JsValidation\Remote\Validator;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Javascript\ValidatorHandler;
+use MoneyPag\JsValidation\Remote\Validator;
 use Symfony\Component\Translation\Loader\ArrayLoader as SymfonyArrayLoader;
 use Symfony\Component\Translation\MessageSelector;
 use Symfony\Component\Translation\Translator as SymfonyTranslator;

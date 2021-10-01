@@ -1,8 +1,8 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Javascript;
+namespace MoneyPag\JsValidation\Tests\Javascript;
 
-use Proengsoft\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Tests\TestCase;
 
 class JavascriptRulesTraitTest extends TestCase
 {
@@ -17,7 +17,7 @@ class JavascriptRulesTraitTest extends TestCase
     {
         parent::setUp();
 
-        $this->mockTrait = $this->getMockForTrait(\Proengsoft\JsValidation\Javascript\JavascriptRulesTrait::class);
+        $this->mockTrait = $this->getMockForTrait(\MoneyPag\JsValidation\Javascript\JavascriptRulesTrait::class);
 
         $this->mockTrait->expects($this->any())
             ->method('getAttributeName')

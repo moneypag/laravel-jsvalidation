@@ -1,8 +1,8 @@
 <?php
 
-namespace Proengsoft\JsValidation\Support;
+namespace MoneyPag\JsValidation\Support;
 
-use Proengsoft\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Tests\TestCase;
 
 class ProtectedClassStubTest
 {
@@ -28,7 +28,7 @@ class AccessProtectedTraitTest extends TestCase
     {
         parent::setUp();
 
-        $this->mockTrait = $this->getMockForTrait(\Proengsoft\JsValidation\Support\AccessProtectedTrait::class);
+        $this->mockTrait = $this->getMockForTrait(\MoneyPag\JsValidation\Support\AccessProtectedTrait::class);
         $this->stubInstance = new ProtectedClassStubTest();
     }
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Proengsoft\JsValidation\Javascript;
+namespace MoneyPag\JsValidation\Javascript;
 
-use Proengsoft\JsValidation\JsValidatorFactory;
-use Proengsoft\JsValidation\Support\DelegatedValidator;
-use Proengsoft\JsValidation\Support\RuleListTrait;
-use Proengsoft\JsValidation\Support\UseDelegatedValidatorTrait;
+use MoneyPag\JsValidation\JsValidatorFactory;
+use MoneyPag\JsValidation\Support\DelegatedValidator;
+use MoneyPag\JsValidation\Support\RuleListTrait;
+use MoneyPag\JsValidation\Support\UseDelegatedValidatorTrait;
 
 class RuleParser
 {
@@ -50,7 +50,7 @@ class RuleParser
     /**
      * Create a new JsValidation instance.
      *
-     * @param  \Proengsoft\JsValidation\Support\DelegatedValidator  $validator
+     * @param  \MoneyPag\JsValidation\Support\DelegatedValidator  $validator
      * @param  null|string  $remoteToken
      */
     public function __construct(DelegatedValidator $validator, $remoteToken = null)

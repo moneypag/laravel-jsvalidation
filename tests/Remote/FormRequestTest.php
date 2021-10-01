@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Remote;
+namespace MoneyPag\JsValidation\Tests\Remote;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Translation\Translator;
@@ -13,8 +13,8 @@ use Illuminate\Routing\UrlGenerator;
 use Illuminate\Validation\Factory as ValidationFactory;
 use Illuminate\Validation\ValidationException;
 use Mockery as m;
-use Proengsoft\JsValidation\Remote\FormRequest;
-use Proengsoft\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Remote\FormRequest;
+use MoneyPag\JsValidation\Tests\TestCase;
 
 class FormRequestTest extends TestCase
 {

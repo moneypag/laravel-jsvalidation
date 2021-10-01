@@ -1,9 +1,9 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests;
+namespace MoneyPag\JsValidation\Tests;
 
-use Proengsoft\JsValidation\Remote\Validator;
-use Proengsoft\JsValidation\RemoteValidationMiddleware;
+use MoneyPag\JsValidation\Remote\Validator;
+use MoneyPag\JsValidation\RemoteValidationMiddleware;
 
 class RemoteValidationMiddlewareTest extends TestCase
 {

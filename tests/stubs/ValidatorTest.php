@@ -1,5 +1,5 @@
 <?php
-namespace Proengsoft\JsValidation\Tests\Remote;
+namespace MoneyPag\JsValidation\Tests\Remote;
 
 class UrlIsLaravel implements \Illuminate\Contracts\Validation\Rule
 {

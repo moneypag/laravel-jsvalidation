@@ -1,10 +1,10 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Javascript;
+namespace MoneyPag\JsValidation\Tests\Javascript;
 
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Javascript\RuleParser;
-use Proengsoft\JsValidation\Javascript\ValidatorHandler;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Javascript\RuleParser;
+use MoneyPag\JsValidation\Javascript\ValidatorHandler;
 
 class ValidatorHandlerTest extends TestCase
 {
@@ -16,7 +16,7 @@ class ValidatorHandlerTest extends TestCase
 
         $rules = ['field'=>['required','array']];
 
-        $mockDelegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $mockDelegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->setMethods(['getRules','hasRule','parseRule','getRule','isImplicit'])
             ->getMock();
@@ -41,7 +41,7 @@ class ValidatorHandlerTest extends TestCase
             ->willReturn(false);
 
 
-        $mockRule = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\RuleParser::class)
+        $mockRule = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\RuleParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -50,7 +50,7 @@ class ValidatorHandlerTest extends TestCase
             ->with($attribute, 'RequiredIf', ['field2','value2'])
             ->willReturn([$attribute, RuleParser::JAVASCRIPT_RULE, ['field2','value2']]);
 
-        $mockMessages = $this->getMockBuilder('Proengsoft\JsValidation\Javascript\MessageParser')
+        $mockMessages = $this->getMockBuilder('MoneyPag\JsValidation\Javascript\MessageParser')
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -91,7 +91,7 @@ class ValidatorHandlerTest extends TestCase
 
         $rules = ['field'=>['required','array']];
 
-        $mockDelegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $mockDelegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->setMethods(['getRules','hasRule','parseRule','getRule','isImplicit'])
             ->getMock();
@@ -105,11 +105,11 @@ class ValidatorHandlerTest extends TestCase
             ->with($attribute, ValidatorHandler::JSVALIDATION_DISABLE)
             ->willReturn(true);
 
-        $mockRule = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\RuleParser::class)
+        $mockRule = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\RuleParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
-        $mockMessages = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\MessageParser::class)
+        $mockMessages = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\MessageParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -131,7 +131,7 @@ class ValidatorHandlerTest extends TestCase
         $attribute = 'field';
         $rule = 'required_if:field2,value2';
 
-        $mockDelegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $mockDelegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->setMethods(['getRules','hasRule','parseRule','getRule','isImplicit','sometimes','explodeRules'])
             ->getMock();
@@ -161,7 +161,7 @@ class ValidatorHandlerTest extends TestCase
             ->willReturn(false);
 
 
-        $mockRule = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\RuleParser::class)
+        $mockRule = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\RuleParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -170,7 +170,7 @@ class ValidatorHandlerTest extends TestCase
             ->with($attribute, 'RequiredIf', ['field2','value2'])
             ->willReturn([$attribute, RuleParser::REMOTE_RULE, ['field2','value2']]);
 
-        $mockMessages = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\MessageParser::class)
+        $mockMessages = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\MessageParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -210,7 +210,7 @@ class ValidatorHandlerTest extends TestCase
         $attribute = 'field';
         $rule = 'active_url';
 
-        $mockDelegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $mockDelegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->setMethods(['getRules','hasRule','parseRule','getRule','isImplicit','sometimes','explodeRules'])
             ->getMock();
@@ -229,7 +229,7 @@ class ValidatorHandlerTest extends TestCase
             ->with($rule)
             ->willReturn(['ActiveUrl',['token',false,false]]);
 
-        $mockRule = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\RuleParser::class)
+        $mockRule = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\RuleParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 
@@ -238,7 +238,7 @@ class ValidatorHandlerTest extends TestCase
             ->with($attribute, 'ActiveUrl', ['token',false,false])
             ->willReturn([$attribute, RuleParser::REMOTE_RULE, ['token',false,false]]);
 
-        $mockMessages = $this->getMockBuilder(\Proengsoft\JsValidation\Javascript\MessageParser::class)
+        $mockMessages = $this->getMockBuilder(\MoneyPag\JsValidation\Javascript\MessageParser::class)
             ->setConstructorArgs([$mockDelegated] )
             ->getMock();
 

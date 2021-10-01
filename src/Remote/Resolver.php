@@ -1,11 +1,11 @@
 <?php
 
-namespace Proengsoft\JsValidation\Remote;
+namespace MoneyPag\JsValidation\Remote;
 
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Validator as BaseValidator;
-use Proengsoft\JsValidation\Support\AccessProtectedTrait;
+use MoneyPag\JsValidation\Support\AccessProtectedTrait;
 
 class Resolver
 {

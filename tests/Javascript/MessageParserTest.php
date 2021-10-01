@@ -1,9 +1,9 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Javascript;
+namespace MoneyPag\JsValidation\Tests\Javascript;
 
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Javascript\MessageParser;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Javascript\MessageParser;
 
 class MessageParserTest extends TestCase
 {
@@ -15,7 +15,7 @@ class MessageParserTest extends TestCase
         $data = [];
         $files = [];
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -53,7 +53,7 @@ class MessageParserTest extends TestCase
         $data = [];
         $files = [];
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -95,7 +95,7 @@ class MessageParserTest extends TestCase
         $data = [];
         $files = [];
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -133,7 +133,7 @@ class MessageParserTest extends TestCase
         $rule = 'Image';
         $return = "<html>";
         
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Facades;
+namespace MoneyPag\JsValidation\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

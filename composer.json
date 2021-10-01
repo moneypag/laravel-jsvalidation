@@ -44,21 +44,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Proengsoft\\JsValidation\\": "src"
+            "MoneyPag\\JsValidation\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Proengsoft\\JsValidation\\Tests\\": "tests"
+            "MoneyPag\\JsValidation\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Proengsoft\\JsValidation\\JsValidationServiceProvider"
+                "MoneyPag\\JsValidation\\JsValidationServiceProvider"
             ],
             "aliases": {
-                "JsValidator": "Proengsoft\\JsValidation\\Facades\\JsValidatorFacade"
+                "JsValidator": "MoneyPag\\JsValidation\\Facades\\JsValidatorFacade"
             }
         }
     },

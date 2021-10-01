@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Exceptions;
+namespace MoneyPag\JsValidation\Exceptions;
 
 use Exception;
 

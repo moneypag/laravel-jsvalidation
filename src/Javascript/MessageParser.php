@@ -1,10 +1,10 @@
 <?php
 
-namespace Proengsoft\JsValidation\Javascript;
+namespace MoneyPag\JsValidation\Javascript;
 
-use Proengsoft\JsValidation\JsValidatorFactory;
-use Proengsoft\JsValidation\Support\DelegatedValidator;
-use Proengsoft\JsValidation\Support\UseDelegatedValidatorTrait;
+use MoneyPag\JsValidation\JsValidatorFactory;
+use MoneyPag\JsValidation\Support\DelegatedValidator;
+use MoneyPag\JsValidation\Support\UseDelegatedValidatorTrait;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class MessageParser
@@ -21,7 +21,7 @@ class MessageParser
     /**
      * Create a new JsValidation instance.
      *
-     * @param  \Proengsoft\JsValidation\Support\DelegatedValidator  $validator
+     * @param  \MoneyPag\JsValidation\Support\DelegatedValidator  $validator
      * @param  bool  $escape
      */
     public function __construct(DelegatedValidator $validator, $escape = false)

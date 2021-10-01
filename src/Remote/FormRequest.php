@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Remote;
+namespace MoneyPag\JsValidation\Remote;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest as Request;

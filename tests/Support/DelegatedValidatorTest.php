@@ -1,7 +1,7 @@
 <?php
-namespace Proengsoft\JsValidation\Support;
+namespace MoneyPag\JsValidation\Support;
 
-use Proengsoft\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Tests\TestCase;
 
 class DelegatedValidatorTest extends TestCase
 {
@@ -14,7 +14,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -78,7 +78,7 @@ class DelegatedValidatorTest extends TestCase
             ->setMethods(['getFiles'])
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -104,7 +104,7 @@ class DelegatedValidatorTest extends TestCase
         $validator->method($this->anything())
             ->willReturn($expected);
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -132,7 +132,7 @@ class DelegatedValidatorTest extends TestCase
             ->with($arg)
             ->willReturn($return);
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -156,7 +156,7 @@ class DelegatedValidatorTest extends TestCase
         $validator->method($this->anything())
             ->willReturn($validator);
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -237,7 +237,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -245,7 +245,7 @@ class DelegatedValidatorTest extends TestCase
             ->method('parse')
             ->willReturn(true);
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->setConstructorArgs([$validator, $parser])
             ->setMethods(['callProtected'])
             ->getMock();
@@ -269,7 +269,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -298,7 +298,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -326,7 +326,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -359,7 +359,7 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -383,11 +383,11 @@ class DelegatedValidatorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $parser = $this->getMockBuilder(\Proengsoft\JsValidation\Support\ValidationRuleParserProxy::class)
+        $parser = $this->getMockBuilder(\MoneyPag\JsValidation\Support\ValidationRuleParserProxy::class)
             ->disableOriginalConstructor()
             ->getMock();
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->setConstructorArgs([$validator, $parser])
             ->setMethods(['callProtected'])
             ->getMock();

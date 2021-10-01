@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests;
+namespace MoneyPag\JsValidation\Tests;
 
 class JsValidationServiceProviderTest extends TestCase
 {
@@ -20,7 +20,7 @@ class JsValidationServiceProviderTest extends TestCase
 
         $app['validator'] = $mockedValidator;
 
-        $mock = $this->getMockBuilder(\Proengsoft\JsValidation\JsValidationServiceProvider::class)
+        $mock = $this->getMockBuilder(\MoneyPag\JsValidation\JsValidationServiceProvider::class)
             ->setMethods(['loadViewsFrom','publishes','mergeConfigFrom'])
             ->setConstructorArgs([$app])
             ->getMock();
@@ -114,7 +114,7 @@ class JsValidationServiceProviderTest extends TestCase
 
         $app[\Illuminate\Contracts\Http\Kernel::class] = $mockKernel;
 
-        $mock = $this->getMockBuilder(\Proengsoft\JsValidation\JsValidationServiceProvider::class)
+        $mock = $this->getMockBuilder(\MoneyPag\JsValidation\JsValidationServiceProvider::class)
             ->setConstructorArgs([$app])
             ->setMethods(['loadViewsFrom','publishes','mergeConfigFrom'])
             ->getMock();
@@ -141,11 +141,11 @@ class JsValidationServiceProviderTest extends TestCase
                 $newApp['config'] = $mockedConfig;
 
                 $factory = $callback($newApp);
-                $this->assertInstanceOf(\Proengsoft\JsValidation\JsValidatorFactory::class, $factory);
+                $this->assertInstanceOf(\MoneyPag\JsValidation\JsValidatorFactory::class, $factory);
             });
 
 
-        $mock = $this->getMockBuilder(\Proengsoft\JsValidation\JsValidationServiceProvider::class)
+        $mock = $this->getMockBuilder(\MoneyPag\JsValidation\JsValidationServiceProvider::class)
             ->setConstructorArgs([$app])
             ->setMethods(['loadViewsFrom','publishes','mergeConfigFrom'])
             ->getMock();

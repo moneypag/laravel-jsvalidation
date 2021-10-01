@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Javascript;
+namespace MoneyPag\JsValidation\Javascript;
 
 trait JavascriptRulesTrait
 {

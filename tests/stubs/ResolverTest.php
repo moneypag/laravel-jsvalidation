@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Remote;
+namespace MoneyPag\JsValidation\Tests\Remote;
 
 use Mockery;
 

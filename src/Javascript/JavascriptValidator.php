@@ -1,11 +1,11 @@
 <?php
 
-namespace Proengsoft\JsValidation\Javascript;
+namespace MoneyPag\JsValidation\Javascript;
 
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\View;
-use Proengsoft\JsValidation\Exceptions\PropertyNotFoundException;
+use MoneyPag\JsValidation\Exceptions\PropertyNotFoundException;
 
 class JavascriptValidator implements Arrayable
 {
@@ -119,7 +119,7 @@ class JavascriptValidator implements Arrayable
      * @param $name
      * @return string
      *
-     * @throws \Proengsoft\JsValidation\Exceptions\PropertyNotFoundException
+     * @throws \MoneyPag\JsValidation\Exceptions\PropertyNotFoundException
      */
     public function __get($name)
     {
@@ -165,7 +165,7 @@ class JavascriptValidator implements Arrayable
      * Set the form selector to validate.
      *
      * @param  string  $selector
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function selector($selector)
     {
@@ -178,7 +178,7 @@ class JavascriptValidator implements Arrayable
      * Set the input selector to ignore for validation.
      *
      * @param  string  $ignore
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function ignore($ignore)
     {
@@ -191,7 +191,7 @@ class JavascriptValidator implements Arrayable
      * Set the view to render Javascript Validations.
      *
      * @param  null|\Illuminate\Contracts\View\View|string  $view
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function view($view)
     {
@@ -204,7 +204,7 @@ class JavascriptValidator implements Arrayable
      * Enables or disables remote validations.
      *
      * @param  null|bool  $enabled
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function remote($enabled = true)
     {
@@ -219,7 +219,7 @@ class JavascriptValidator implements Arrayable
      * @param  string  $attribute
      * @param  string|array  $rules
      * @param  null  $callback  Dummy attribute to make API seamless with Laravel sometimes()
-     * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
+     * @return \MoneyPag\JsValidation\Javascript\JavascriptValidator
      */
     public function sometimes($attribute, $rules, $callback = null)
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests\Javascript;
+namespace MoneyPag\JsValidation\Tests\Javascript;
 
-use Proengsoft\JsValidation\Tests\TestCase;
-use Proengsoft\JsValidation\Javascript\RuleParser;
+use MoneyPag\JsValidation\Tests\TestCase;
+use MoneyPag\JsValidation\Javascript\RuleParser;
 
 class RuleParserTest extends TestCase
 {
@@ -14,7 +14,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token =null;
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -34,7 +34,7 @@ class RuleParserTest extends TestCase
         $parameters = ['field2','value2'];
         $token =null;
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -54,7 +54,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token ='my token';
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -75,7 +75,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token ='my token';
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -92,7 +92,7 @@ class RuleParserTest extends TestCase
     {
         $expects = ['somefield'=>'required'];
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -113,7 +113,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token =null;
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -133,7 +133,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token ='my token';
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -156,7 +156,7 @@ class RuleParserTest extends TestCase
         $parameters = ['min_height=100','ratio=1/3'];
         $token =null;
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -198,7 +198,7 @@ class RuleParserTest extends TestCase
         $parameters = [];
         $token = 'my token';
 
-        $delegated = $this->getMockBuilder(\Proengsoft\JsValidation\Support\DelegatedValidator::class)
+        $delegated = $this->getMockBuilder(\MoneyPag\JsValidation\Support\DelegatedValidator::class)
             ->disableOriginalConstructor()
             ->getMock();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Proengsoft\JsValidation\Support;
+namespace MoneyPag\JsValidation\Support;
 
 use Illuminate\Validation\ValidationRuleParser;
 

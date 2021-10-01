@@ -1,10 +1,10 @@
 <?php
 
-namespace Proengsoft\JsValidation\Tests;
+namespace MoneyPag\JsValidation\Tests;
 
 use Mockery as m;
-use Proengsoft\JsValidation\Javascript\JavascriptValidator;
-use Proengsoft\JsValidation\JsValidatorFactory;
+use MoneyPag\JsValidation\Javascript\JavascriptValidator;
+use MoneyPag\JsValidation\JsValidatorFactory;
 
 require_once __DIR__.'/stubs/JsValidatorFactoryTest.php';
 
@@ -70,7 +70,7 @@ class JsValidatorFactoryTest extends TestCase
 
         $jsValidator = $factory->make($rules, $messages, $customAttributes, $selector);
 
-        $this->assertInstanceOf(\Proengsoft\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
+        $this->assertInstanceOf(\MoneyPag\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
     }
 
     public function testMakeArrayRules()
@@ -172,7 +172,7 @@ class JsValidatorFactoryTest extends TestCase
 
         $jsValidator = $factory->make($rules, $messages, $customAttributes, $selector);
 
-        $this->assertInstanceOf(\Proengsoft\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
+        $this->assertInstanceOf(\MoneyPag\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
     }
 
     public function testCreateFromFormRequestInstance()
@@ -200,7 +200,7 @@ class JsValidatorFactoryTest extends TestCase
         $jsValidator = $factory->formRequest($mockFormRequest, $selector);
 
 
-        $this->assertInstanceOf(\Proengsoft\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
+        $this->assertInstanceOf(\MoneyPag\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
     }
 
 
@@ -244,14 +244,14 @@ class JsValidatorFactoryTest extends TestCase
 
         $app->expects($this->once())
             ->method('build')
-            ->with(\Proengsoft\JsValidation\Tests\StubFormRequest::class)
+            ->with(\MoneyPag\JsValidation\Tests\StubFormRequest::class)
             ->willReturn($mockForm);
 
         $factory = new JsValidatorFactory($app, $options);
 
-        $jsValidator = $factory->formRequest([\Proengsoft\JsValidation\Tests\StubFormRequest::class] , $selector);
+        $jsValidator = $factory->formRequest([\MoneyPag\JsValidation\Tests\StubFormRequest::class] , $selector);
 
-        $this->assertInstanceOf(\Proengsoft\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
+        $this->assertInstanceOf(\MoneyPag\JsValidation\Javascript\JavascriptValidator::class, $jsValidator);
     }
 
     public function testCreateFromFormRequestClassNameNew()
